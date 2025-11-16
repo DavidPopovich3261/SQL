@@ -1,0 +1,10 @@
+1. SELECT * FROM customers
+ =13
+2. SELECT lastName,firstName FROM employees
+3.SELECT employeeNumber ,firstName ,jobTitle FROM employees
+4.SELECT productName,productCode  FROM products
+5.SELECT officeCode FROM offices
+6.SELECT * FROM orders
+7. SELECT customerNumber FROM payments
+8.SELECT orderNumber ,orderDate FROM orders
+9.
