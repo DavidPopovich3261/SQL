@@ -37,4 +37,10 @@ b
 11 .SELECT * FROM `cell_towers` WHERE `תוצאה מירבית ב% ביחס לסף הבריאות` =0
 12 .SELECT * FROM `cell_towers` WHERE `חברה` LIKE '%PHI%' AND `עיר` LIKE 'תל אביב' 
 13 .SELECT * FROM `cell_towers` WHERE `סוג אתר` NOT LIKE 'תורן קרקעי' 
-14 
+14 .SELECT * FROM `cell_towers` WHERE `תאריך היתר הקמה` > '2020-01-01' 
+15 .SELECT * FROM `cell_towers` WHERE `רשות מקומית` LIKE 'ירושלים' 
+16 .SELECT * FROM `cell_towers` WHERE `כתובת האתר` LIKE '%רחוב%'
+17 .SELECT * FROM `cell_towers` WHERE `טכנולוגיית שידור` LIKE '%4%' AND `טכנולוגיית שידור` LIKE '%3%'
+18 .SELECT * FROM `cell_towers` WHERE `חברה` NOT LIKE '%סלקום%' 
+19 .SELECT * FROM `cell_towers` WHERE `עיר` NOT LIKE NULL
+20 .SELECT * FROM `cell_towers` WHERE `תאור נקודה בה התקבלה תוצאה מירבית` LIKE '%קרקע%'
