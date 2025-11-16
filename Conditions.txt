@@ -26,7 +26,16 @@ a .SELECT * FROM `customers` WHERE `country` IN ('USA','France','Canada')
 b .SELECT * FROM `customers` WHERE `country` NOT IN ('Australia', 'Japan','New Zealand')
 2
 a .SELECT * FROM `employees` WHERE  `jobTitle` NOT LIKE '% Manager %' AND `jobTitle` NOT IN ('President','Sales Rep')
-
-
-
+3
+a .SELECT * FROM `products` WHERE `buyPrice` BETWEEN 19 AND 51
+b .SELECT * FROM `products` WHERE (`quantityInStock` BETWEEN 2000 AND 3000) AND `buyPrice` NOT BETWEEN 20 AND 45  
+c .SELECT * FROM `products` WHERE `MSRP` NOT BETWEEN 70 AND 100 
+d .SELECT * FROM `products` WHERE `quantityInStock` BETWEEN 1000 AND 5000
+e .SELECT * FROM `products` WHERE `productVendor` LIKE '%Welly Diecast%' OR `productVendor` LIKE 'Motor City Art Classics'
+4
+a .SELECT * FROM `orders` WHERE status IN ('Shipped','cancelled')
+b .SELECT * FROM `orders` WHERE `orderNumber` NOT IN ('10100',' 10101',' 10102')
+c .SELECT * FROM `orders` WHERE `orderDate` BETWEEN '2003-01-01' AND '2003-12-31'
+5
+a .SELECT * FROM `offices` WHERE `officeCode` BETWEEN 1 AND 3 OR officeCode =7
 
